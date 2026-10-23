@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flete Leo - Rosario y Alrededores | Fletes, Mudanzas y Precios Accesibles</title>
+
+    <meta name="description" content="Flete Leo en Rosario y Alrededores. Servicio de fletes, mudanzas, repartos y traslado de muebles. Flete barato, flete chico y flete económico. ¡Precios accesibles!" />
+    <meta name="keywords" content="flete rosario y alrededores, flete barato, flete chico, flete economico, mudanzas rosario, repartos, traslado de muebles, mercaderia, flete leo, precios accesibles, viajes al mercado" />
+    <link rel="canonical" href="https://www.fleteleo.com.ar" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚚</text></svg>" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "MovingCompany",
+            "name": "Flete Leo",
+            "description": "Servicio de fletes, mudanzas y traslados en Rosario y alrededores con precios accesibles.",
+            "telephone": "+5493412460901",
+            "areaServed": {
+                "@type": "AdministrativeArea",
+                "name": "Rosario y Alrededores"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Rosario",
+                "addressRegion": "Santa Fe",
+                "addressCountry": "AR"
+            }
+        }
+    </script>
+
+    <style>
+        /* ===== RESET Y GENERAL ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --rojo-principal: #E30613; /* Rojo de la imagen para resaltar */
+            --amarillo-hover: #FFD700; /* Amarillo de la imagen para hovers */
+            --verde-whatsapp: #25D366;
+            --texto-oscuro: #2c3e50;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-weight: 500;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+        }
+
+        .btn-primary {
+            background-color: var(--rojo-principal);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: var(--amarillo-hover);
+            color: var(--texto-oscuro);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-secondary {
+            background-color: var(--rojo-principal);
+            color: white;
+        }
+        .btn-secondary:hover {
+            background-color: var(--amarillo-hover);
+            color: var(--texto-oscuro);
+            transform: translateY(-2px);
+        }
+
+        .btn-emergency {
+            background-color: var(--rojo-principal);
+            color: white;
+            animation: pulse 2s infinite;
+        }
+        
+        .btn-emergency:hover {
+            background-color: #b30510;
+            transform: scale(1.05);
+        }
+
+        .btn-whatsapp {
+            background-color: var(--verde-whatsapp);
+            color: white;
+        }
+        .btn-whatsapp:hover {
+            background-color: #1da851;
+            transform: translateY(-2px);
+        }
+
+        .btn-contact {
+            background-color: var(--texto-oscuro);
+            color: white;
+            padding: 8px 18px;
+            font-size: 0.9rem;
+            margin-top: 10px;
+            align-self: center;
+            border-radius: 50px;
+        }
+        .btn-contact:hover {
+            background-color: var(--amarillo-hover);
+            color: var(--texto-oscuro);
+            transform: translateY(-2px);
+        }
+        .btn-contact i {
+            margin-right: 6px;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(227, 6, 19, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(227, 6, 19, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(227, 6, 19, 0); }
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            height: 80px;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            position: relative;
+            height: 100%;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            z-index: 1001;
+            height: 100%;
+        }
+
+        .logo h1 {
+            font-size: 1.8rem;
+            font-weight: 900;
+            margin: 0;
+            color: var(--texto-oscuro);
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+
+        .logo h1 span {
+            color: var(--rojo-principal);
+        }
+
+        .logo i {
+            font-size: 2rem;
+            color: var(--rojo-principal);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        .nav-links a:hover {
+            color: var(--amarillo-hover);
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            background: none;
+            border: none;
+            color: var(--texto-oscuro);
+            padding: 5px;
+            z-index: 1001;
+            position: relative;
+            right: 0;
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 120px 0 80px;
+            margin-top: 80px;
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-badge {
+            background-color: var(--amarillo-hover);
+            color: var(--texto-oscuro);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 20px;
+            display: inline-block;
+            text-transform: uppercase;
+            transform: rotate(-2deg);
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            font-weight: 900;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+
+        .hero h2 span {
+            color: var(--amarillo-hover);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            font-weight: 500;
+        }
+
+        /* ===== SERVICIOS ===== */
+        .services {
+            padding: 80px 0;
+            background-color: white;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .section-title h2 {
+            font-size: 2.2rem;
+            color: var(--texto-oscuro);
+        }
+        .section-title h2::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: var(--rojo-principal);
+            margin: 10px auto 0;
+        }
+        .section-title p {
+            color: #7f8c8d;
+            max-width: 600px;
+            margin: 15px auto 0;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            border-bottom: 4px solid var(--rojo-principal);
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border-bottom-color: var(--amarillo-hover);
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--rojo-principal);
+            margin-bottom: 20px;
+            transition: color 0.3s ease;
+        }
+        
+        .service-card:hover .service-icon {
+            color: var(--amarillo-hover);
+        }
+
+        .service-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: var(--texto-oscuro);
+        }
+
+        .service-card p {
+            flex-grow: 1;
+        }
+
+        /* ===== SOBRE NOSOTROS ===== */
+        .about {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+
+        .about-container {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .about-content {
+            flex: 1;
+        }
+
+        .about-content h3 {
+            color: var(--rojo-principal);
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .about-image {
+            height: 400px;
+            flex: 1;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* ===== UBICACIÓN ===== */
+        .location {
+            padding: 80px 0;
+            background-color: white;
+        }
+
+        .location-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .map-container {
+            width: 100%;
+            height: 400px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            display: block;
+        }
+
+        .location-info {
+            padding: 20px;
+        }
+        .location-info h3 {
+            margin-bottom: 20px;
+            color: var(--rojo-principal);
+        }
+
+        .location-details {
+            margin-bottom: 30px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background-color: #fee2e2; /* Rojo muy claro */
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-size: 1.2rem;
+            color: var(--rojo-principal);
+            flex-shrink: 0;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background-color: var(--texto-oscuro);
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-column h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 40px;
+            height: 3px;
+            background-color: var(--amarillo-hover);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        .footer-links a:hover {
+            color: var(--amarillo-hover);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: #bdc3c7;
+        }
+
+        /* ===== BOTONES FLOTANTES ===== */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background-color: var(--verde-whatsapp);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: white;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        .whatsapp-float:hover {
+            background-color: #1da851;
+            transform: scale(1.1);
+        }
+
+        .emergency-button {
+            position: fixed;
+            top: 100px;
+            right: 30px;
+            z-index: 999;
+            padding: 14px 28px;
+            font-size: 1rem;
+            border-radius: 50px;
+            box-shadow: 0 4px 12px rgba(227, 6, 19, 0.4);
+        }
+
+        /* ===== MODALES ===== */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+            position: relative;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #7f8c8d;
+        }
+        .modal-close:hover {
+            color: var(--rojo-principal);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 992px) {
+            .about-container,
+            .location-container {
+                flex-direction: column;
+                grid-template-columns: 1fr;
+            }
+            .location-info {
+                order: 2;
+            }
+            .map-container {
+                order: 1;
+            }
+            .hero h2 {
+                font-size: 2.2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-container {
+                padding: 10px 15px;
+            }
+            header {
+                height: 70px;
+            }
+            .logo h1 {
+                font-size: 1.5rem;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: white;
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                z-index: 1000;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .nav-links li {
+                margin: 10px 0;
+                margin-left: 0;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .hero {
+                padding: 100px 0 60px;
+                margin-top: 70px;
+            }
+
+            .emergency-button {
+                position: fixed;
+                top: auto;
+                bottom: 90px;
+                right: 20px;
+                left: auto;
+                padding: 10px 16px;
+                font-size: 0.9rem;
+                margin: 0;
+                display: block;
+                width: auto;
+            }
+
+            .whatsapp-float {
+                bottom: 20px;
+                right: 20px;
+                width: 50px;
+                height: 50px;
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                height: 60px;
+            }
+            .hero {
+                margin-top: 60px;
+                padding: 80px 0 50px;
+            }
+            .hero h2 {
+                font-size: 1.8rem;
+            }
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+            .emergency-button {
+                bottom: 100px;
+                right: 15px;
+                padding: 12px 21px;
+                font-size: 0.8rem;
+            }
+            .whatsapp-float {
+                bottom: 30px;
+                right: 15px;
+                width: 55px;
+                height: 55px;
+            }
+            .contact-item {
+                align-items: flex-start;
+            }
+            .contact-icon {
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+                flex-shrink: 0;
+                margin-top: 2px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-truck-moving"></i>
+                <h1>Flete<span>Leo</span></h1>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú de navegación">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#ubicacion">Ubicación y contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <meta itemprop="name" content="Flete Leo" />
+        <meta itemprop="telephone" content="+5493412460901" />
+        <meta itemprop="address" content="Rosario y Alrededores, Santa Fe, Argentina" />
+    </header>
+
+    <!-- BOTÓN DE LLAMADA (Ex Emergencia) -->
+    <a href="tel:+5493412460901" class="btn btn-emergency emergency-button" id="emergencyBtn" aria-label="Llamar a Flete Leo">
+        <i class="fas fa-phone-alt"></i> LLAMAR AHORA
+    </a>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+        <div class="container hero-content">
+            <div class="hero-badge">¡Precios Accesibles!</div>
+            <h2>Flete <span>Barato</span> en Rosario y Alrededores</h2>
+            <p>Servicio de fletes, mudanzas y viajes al mercado. Flete chico, económico y particular. ¡Consultanos sin compromiso!</p>
+            <a href="https://wa.me/5493412460901" class="btn btn-whatsapp" target="_blank" aria-label="Contactar a Flete Leo por WhatsApp">
+                <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestros Servicios</h2>
+                <p>Ofrecemos soluciones de transporte rápidas y efectivas en Rosario y Alrededores con los mejores precios del mercado.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Mudanzas -->
+                <div class="service-card" itemscope itemtype="https://schema.org/Service">
+                    <div class="service-icon">
+                        <i class="fas fa-house"></i>
+                    </div>
+                    <h3 itemprop="name">Mudanzas</h3>
+                    <p itemprop="description">Mudanzas residenciales y comerciales en Rosario y Alrededores. Nos encargamos de trasladar tus pertenencias con el mayor cuidado.</p>
+                    <meta itemprop="serviceType" content="Mudanzas" />
+                    <a href="https://wa.me/5493412460901" class="btn btn-contact" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Consultar
+                    </a>
+                </div>
+
+                <!-- Repartos -->
+                <div class="service-card" itemscope itemtype="https://schema.org/Service">
+                    <div class="service-icon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <h3 itemprop="name">Repartos</h3>
+                    <p itemprop="description">Servicio de reparto y distribución en Rosario y Alrededores. Ideal para comercios que buscan un flete chico y económico.</p>
+                    <meta itemprop="serviceType" content="Repartos" />
+                    <a href="https://wa.me/5493412460901" class="btn btn-contact" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Consultar
+                    </a>
+                </div>
+
+                <!-- Traslado de Muebles -->
+                <div class="service-card" itemscope itemtype="https://schema.org/Service">
+                    <div class="service-icon">
+                        <i class="fas fa-couch"></i>
+                    </div>
+                    <h3 itemprop="name">Traslado de Muebles</h3>
+                    <p itemprop="description">Traslado seguro de muebles y electrodomésticos en Rosario y Alrededores. Contamos con los elementos necesarios para que nada se dañe.</p>
+                    <meta itemprop="serviceType" content="Traslado de Muebles" />
+                    <a href="https://wa.me/5493412460901" class="btn btn-contact" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Consultar
+                    </a>
+                </div>
+
+                <!-- Mercadería -->
+                <div class="service-card" itemscope itemtype="https://schema.org/Service">
+                    <div class="service-icon">
+                        <i class="fas fa-pallet"></i>
+                    </div>
+                    <h3 itemprop="name">Mercadería</h3>
+                    <p itemprop="description">Traslado de mercadería en general. Realizamos viajes al mercado y distribuciones programadas en Rosario y Alrededores.</p>
+                    <meta itemprop="serviceType" content="Mercadería" />
+                    <a href="https://wa.me/5493412460901" class="btn btn-contact" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Consultar
+                    </a>
+                </div>
+
+                <!-- Fletes Particulares y Comerciales -->
+                <div class="service-card" itemscope itemtype="https://schema.org/Service">
+                    <div class="service-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3 itemprop="name">Fletes Particulares y Comerciales</h3>
+                    <p itemprop="description">Fletes a medida para particulares y empresas. Cobertura en Rosario y Alrededores, con la mejor atención.</p>
+                    <meta itemprop="serviceType" content="Fletes Particulares y Comerciales" />
+                    <a href="https://wa.me/5493412460901" class="btn btn-contact" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Consultar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE NOSOTROS -->
+    <section class="about" id="nosotros">
+        <div class="container">
+            <div class="section-title">
+                <h2>Sobre Flete Leo</h2>
+            </div>
+
+            <div class="about-container">
+                <div class="about-content">
+                    <h3>Tu solución en transporte en Rosario y Alrededores</h3>
+                    <p>En <strong>Flete Leo</strong> nos dedicamos a brindar un servicio de fletes confiable, rápido y seguro en la ciudad de Rosario y sus alrededores.</p>
+                    <p>Sabemos lo importante que es tu tiempo y tu carga, por eso nos destacamos por nuestra puntualidad, responsabilidad y, sobre todo, por nuestros <strong>precios accesibles</strong>.</p>
+                    <p>Ya sea que necesites un <em>flete chico</em>, una mudanza completa o un viaje al mercado, estamos listos para ayudarte.</p>
+                    <a href="https://wa.me/5493412460901" class="btn btn-secondary">Contactanos Ahora</a>
+                </div>
+
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1586191582151-f73872dfd183?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Camión de Flete Leo operando en Rosario y Alrededores" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UBICACIÓN Y CONTACTO -->
+    <section class="location" id="ubicacion">
+        <div class="container">
+            <div class="section-title">
+                <h2>Ubicación y Contacto</h2>
+                <p>Operamos en toda la ciudad de Rosario y Alrededores.</p>
+            </div>
+
+            <div class="location-container">
+                <div class="map-container">
+                    <!-- Mapa genérico de Rosario -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107367.20848698262!2d-60.705076596275306!3d-32.952198938111724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b6539335d7d75b%3A0xec4086e90258a557!2sRosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1700000000000!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de cobertura en Rosario y Alrededores"></iframe>
+                </div>
+
+                <div class="location-info">
+                    <h3>¡Coordinemos tu viaje!</h3>
+
+                    <div class="location-details">
+                        <p>Contáctanos para recibir un presupuesto sin cargo. Te respondemos rápido y con los mejores precios.</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Zona de Cobertura</h4>
+                            <p>Rosario y Alrededores</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <h4>Horario de Atención</h4>
+                            <p>Lunes a Sábados de 8:00 a 20:00 hs.</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div>
+                            <h4>Teléfono / WhatsApp</h4>
+                            <p>341 246-0901</p>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/5493412460901" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Pedir Presupuesto
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>FLETE LEO</h3>
+                    <p>Servicio profesional de <strong>fletes en Rosario y Alrededores</strong>. Especialistas en mudanzas, repartos y traslados con precios accesibles.</p>
+
+                    <div style="margin-top: 20px;">
+                        <a href="https://wa.me/5493412460901" class="btn btn-whatsapp" style="padding: 8px 15px; font-size: 0.9rem;">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#ubicacion">Ubicación y contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Servicios</h3>
+                    <ul class="footer-links">
+                        <li><a href="#servicios">Mudanzas</a></li>
+                        <li><a href="#servicios">Repartos</a></li>
+                        <li><a href="#servicios">Traslado de Muebles</a></li>
+                        <li><a href="#servicios">Mercadería</a></li>
+                        <li><a href="#servicios">Fletes Particulares</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-phone-alt"></i> 341 246-0901</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Rosario y Alrededores, Santa Fe</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; Todos los derechos reservados - Flete Leo.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOTANTE -->
+    <a href="https://wa.me/5493412460901" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- MODAL LLAMADA -->
+    <div class="modal-overlay" id="emergencyModal">
+        <div class="modal-content">
+            <span class="modal-close" id="modalClose">&times;</span>
+            <h2>¿Necesitas coordinar un flete?</h2>
+            <p>Llámanos directamente o escríbenos por WhatsApp para una atención inmediata en Rosario y Alrededores.</p>
+
+            <div style="margin: 30px 0;">
+                <a href="tel:+5493412460901" class="btn btn-emergency" style="margin-bottom: 15px; display: block;">
+                    <i class="fas fa-phone-alt"></i> LLAMAR AHORA: 341 246-0901
+                </a>
+                <a href="https://wa.me/5493412460901" class="btn btn-whatsapp" style="display: block;" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Enviar WhatsApp
+                </a>
+            </div>
+
+            <p><small>Atención de Lunes a Sábados de 8:00 a 20:00 hs.</small></p>
+        </div>
+    </div>
+
+    <script>
+        // ===== MENÚ HAMBURGUESA =====
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            document.getElementById('navLinks').classList.toggle('active');
+            const icon = this.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navLinks').classList.remove('active');
+                const icon = document.querySelector('.menu-toggle i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        // ===== MODAL LLAMADA =====
+        document.getElementById('emergencyBtn').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('emergencyModal').style.display = 'flex';
+        });
+        document.getElementById('modalClose').addEventListener('click', function() {
+            document.getElementById('emergencyModal').style.display = 'none';
+        });
+        document.getElementById('emergencyModal').addEventListener('click', function(e) {
+            if (e.target === this) document.getElementById('emergencyModal').style.display = 'none';
+        });
+
+        // ===== SCROLL SUAVE =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if (this.id === 'emergencyBtn') return;
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // ===== EFECTO SCROLL =====
+        function checkScroll() {
+            document.querySelectorAll('.service-card, .about-content, .map-container, .location-info')
+                .forEach(element => {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top < window.innerHeight / 1.2) {
+                        element.style.opacity = '1';
+                        element.style.transform = 'translateY(0)';
+                    }
+                });
+        }
+        document.querySelectorAll('.service-card, .about-content, .map-container, .location-info')
+            .forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            });
+        window.addEventListener('scroll', checkScroll);
+        window.addEventListener('load', checkScroll);
+    </script>
+</body>
+</html>
